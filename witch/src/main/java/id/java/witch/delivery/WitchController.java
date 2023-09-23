@@ -22,7 +22,7 @@ public class WitchController {
         return "Hello";
     }
 
-    @PostMapping
+    @PostMapping("/Hitung")
     public Double Hitung(@RequestBody Person person){
 
         witchUsecase.generatePrima();
