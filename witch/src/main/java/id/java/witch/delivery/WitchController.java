@@ -17,11 +17,6 @@ public class WitchController {
     @Autowired
     WitchUsecase witchUsecase;
 
-    @GetMapping("/Hello")
-    public String Hi(){
-        return "Hello";
-    }
-
     @PostMapping("/Hitung")
     public Double Hitung(@RequestBody Person person){
 
