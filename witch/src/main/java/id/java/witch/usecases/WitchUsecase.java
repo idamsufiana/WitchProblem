@@ -46,11 +46,8 @@ public class WitchUsecase{
         
         res = res/size;
 
-        }catch(ArithmeticException e){
-            log.info("Specific Exception "+e);
-            
         }catch(Exception e){
-            log.info("Exception occurred");
+            log.info("Exception occurred "+e);
         }
 
         return res;
