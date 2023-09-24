@@ -47,7 +47,7 @@ public class WitchUsecase{
         res = res/size;
 
         }catch(Exception e){
-            log.info("Exception occurred "+e);
+            log.info(e.getMessage());
         }
 
         return res;
