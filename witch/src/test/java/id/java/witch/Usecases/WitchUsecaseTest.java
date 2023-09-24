@@ -18,7 +18,7 @@ import id.java.witch.usecases.WitchUsecase;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-class WitchUsecaseTest {
+public class WitchUsecaseTest {
 
     @Autowired
     WitchUsecase witchUsecase;
@@ -28,7 +28,7 @@ class WitchUsecaseTest {
     List<People> list = new ArrayList<>();
 
     @Test
-    void encodeRequestBody() throws ParseException {
+    void Hitung() throws ParseException {
         orang.setAgeOfDeath(10);
         orang.setYearOfDeath(12);
         list.add(0, orang);
