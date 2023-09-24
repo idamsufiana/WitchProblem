@@ -19,6 +19,7 @@ class WitchUsecaseTest {
 
     @Autowired
     WitchUsecase witchUsecase;
+
     Person request = new Person();
 
     @Test
