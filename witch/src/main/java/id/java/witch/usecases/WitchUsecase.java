@@ -35,7 +35,7 @@ public class WitchUsecase{
             jeda = person.getPeople().get(i).getYearOfDeath() - person.getPeople().get(i).getAgeOfDeath();
             // find prima number + 1
             if(jeda<0){
-                return res = -1*0.0;
+                return res = -1.0;
             }
             int fibo = sumFibonacci(jeda);
             res = res + fibo;
