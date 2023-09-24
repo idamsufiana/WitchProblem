@@ -14,7 +14,7 @@ public class WitchUsecase{
     public void generatePrima(){
 
         prima.put(1, 1);
-        int urut = 0;
+        int urut = 1;
 
         for (int i=2; i<=100; i++)
         {
@@ -54,7 +54,7 @@ public class WitchUsecase{
         }
         
         res = res/size;
-        return 0.0;
+        return res;
 
     }
 

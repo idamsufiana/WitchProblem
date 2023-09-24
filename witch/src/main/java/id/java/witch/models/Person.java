@@ -7,7 +7,7 @@ import lombok.Data;
 @Data
 public class Person{
 
-    @JsonProperty("people")
+    @JsonProperty("People")
     private List<person> people;
 
     @Data
