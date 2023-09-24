@@ -18,8 +18,6 @@ public class WitchController {
 
     @PostMapping("/Hitung")
     public Double Hitung(@RequestBody Person person){
-
-        witchUsecase.generatePrima();
         return witchUsecase.rataRata(person);
     }
     

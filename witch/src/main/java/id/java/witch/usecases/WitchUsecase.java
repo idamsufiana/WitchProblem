@@ -1,7 +1,5 @@
 package id.java.witch.usecases;
 
-import java.util.HashMap;
-
 import org.springframework.stereotype.Component;
 
 import id.java.witch.models.Person;
@@ -9,30 +7,20 @@ import id.java.witch.models.Person;
 @Component
 public class WitchUsecase{
 
-    HashMap<Integer, Integer> prima = new HashMap<>();
 
-    public void generatePrima(){
+    public int sumFibonacci(int n){
 
-        prima.put(1, 1);
-        int urut = 1;
-
-        for (int i=2; i<=100; i++)
-        {
-            int Check=0;
-            for (int j=1; j<=i; j++)
-            {
-                if (i%j==0)
-                {
-                    Check = Check+1;
-                }
-            }
-            if (Check==2)
-            { 
-                urut++;
-                prima.put(urut, i);
-            }
+        int a = 0, b = 0, sumf = 1;
+        if (n <= 0)
+          sumf = 0;
+        int curr = 1;
+        for(int i = 1; i < n; i++){
+            a = b;
+            b = curr;
+            curr = a+b;
+            sumf += curr;
         }
-
+        return sumf;
     }
     
 
@@ -49,8 +37,8 @@ public class WitchUsecase{
             if(jeda<0){
                 return res = -1*0.0;
             }
-            int prima = Prima(jeda);
-            res = res + prima;
+            int fibo = sumFibonacci(jeda);
+            res = res + fibo;
         }
         
         res = res/size;
@@ -58,8 +46,4 @@ public class WitchUsecase{
 
     }
 
-    public int Prima(int nourut){
-
-        return prima.get(nourut);
-    }
 }
