@@ -24,15 +24,15 @@ public class WitchUsecase{
     }
     
 
-    public Double rataRata (Person person){
+    public Double rataRata (Person request){
 
-        int size = person.getPeople().size();
+        int size = request.getData().size();
         int jeda = 0;
         Double res = 0.0;
         
 
         for(int i=0; i<size; i++){
-            jeda = person.getPeople().get(i).getYearOfDeath() - person.getPeople().get(i).getAgeOfDeath();
+            jeda = request.getData().get(i).getYearOfDeath() - request.getData().get(i).getAgeOfDeath();
             // find prima number + 1
             if(jeda<0){
                 return res = -1.0;
