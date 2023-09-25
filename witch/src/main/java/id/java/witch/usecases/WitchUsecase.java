@@ -36,7 +36,7 @@ public class WitchUsecase{
 
             for(int i=0; i<size; i++){
             jeda = request.getData().get(i).getYearOfDeath() - request.getData().get(i).getAgeOfDeath();
-            // find prima number + 1
+            // find Sum Fibonacci
             if(jeda<0){
                 return res = -1.0;
             }
